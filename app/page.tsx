@@ -1,7 +1,8 @@
 import Image from "next/image";
+import TopNavBar from "./components/topNavBar";
 
 export default function Home() {
   return (
-    <h1>Hello World</h1>
-  );
+    <TopNavBar/>
+ );
 }
