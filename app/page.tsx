@@ -75,87 +75,103 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-black/80">
-            <div className="group">
+
+            <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <ShieldCheck className="w-12 h-12 text-black" />
+                  <ShieldCheck className="w-12 h-12 text-yellow-500" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Certified & Compliant
               </h3>
-              <p className="text-sm text-gray-600">
-                Fully licensed and insured with industry certifications
-              </p>
+              <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
+                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
+                <p className="text-lg text-yellow-500 mb-2">
+                  Fully licensed and insured with industry certifications
+                </p>
+                <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
+                  <li>• OSHA 30 – General Industry</li>
+                  <li>• EPA – Safe Use of Chemicals</li>
+                  <li>• Bloodborne Pathogens Training</li>
+                  <li>• HazCom / SDS Management</li>
+                  <li>• ISSA CIMS (In Progress)</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="group">
+            <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <Gem className="w-12 h-12 text-black" />
+                  <Gem className="w-12 h-12 text-yellow-500" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Luxury-Level Detailing
               </h3>
-              <p className="text-sm text-gray-600">
-                White-glove service with meticulous attention to every surface
-              </p>
+               <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
+                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
+                  <p className="text-lg text-yellow-500 mb-2">
+                    White-glove service
+                  </p>
+                  <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
+                    <li>• Meticulous Cleaning of Elevators and Stairs</li>
+                    <li>• Metal/Stone Marble Floor Poloshing</li>
+                    <li>• Crystal Clear Glass Cleaning</li>
+                    <li>• Glossy Wood Restoration</li>
+                    <li>• Luxury Buildings</li>
+                  </ul>
+                </div>
             </div>
 
-            <div className="group">
+            <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <Users className="w-12 h-12 text-black" />
+                  <Users className="w-12 h-12 text-yellow-500" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Professionally Trained Teams
               </h3>
-              <p className="text-sm text-gray-600">
-                Expert staff with ongoing training and quality assurance
-              </p>
+              <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
+                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
+                <p className="text-lg text-yellow-500 mb-2">
+                  Expert staff with training and quality assurance
+                </p>
+                <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
+                  <li>• Background Checks</li>
+                  <li>• Cross-Training Programs</li>
+                  <li>• Supervisor Workshops</li>
+                  <li>• Safety Protocol Updates</li>
+                  <li>• Quality Assurance Initiatives</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="group">
+            <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <SprayCan className="w-12 h-12 text-black" />
+                  <SprayCan className="w-12 h-12 text-yellow-500" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Cutting-Edge Equipment
               </h3>
-              <p className="text-sm text-gray-600">
-                Premium tools and eco-friendly solutions for superior results
-              </p>
+              <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
+                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
+                <p className="text-lg text-yellow-500 mb-2">
+                  Premium tools and eco-friendly solutions
+                </p>
+                <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
+                  <li>• Advanced Cleaning Technology</li>
+                  <li>• High-Performance Machinery</li>
+                  <li>• Eco-Friendly Cleaning Agents</li>
+                  <li>• Energy-Efficiency Solutions</li>
+                  <li>• Reusable Supply Systems</li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div className="group">
-  <div className="mb-6 flex justify-center">
-    <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-      <ShieldCheck className="w-12 h-12 text-black" />
-    </div>
-  </div>
-
-  <h3 className="font-medium text-lg tracking-wide mb-2">
-    Certified & Compliant
-  </h3>
-
-  <p className="text-sm text-gray-600 mb-4">
-    Fully licensed, insured, and compliant with industry-leading standards
-  </p>
-
-  <ul className="text-sm text-gray-600 space-y-1 text-left mx-auto w-fit">
-    <li>• OSHA 30 – General Industry</li>
-    <li>• EPA – Safe Use of Chemicals</li>
-    <li>• Bloodborne Pathogens Training</li>
-    <li>• HazCom / SDS Management</li>
-    <li>• ISSA CIMS (In Progress)</li>
-  </ul>
-</div>
-
-
         </div>
       </section>
 
