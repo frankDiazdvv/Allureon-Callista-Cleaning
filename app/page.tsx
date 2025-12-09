@@ -64,7 +64,7 @@ export default function Home() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-24 bg-white text-center" id="about">
+      <section className="py-24 bg-white text-center scroll-mt-32" id="about">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-light tracking-widest mb-6">
             WHY CHOOSE US
@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       {/* OUR SIGNATURE SERVICES */}
-      <section className="py-24 bg-gray-50 text-center" id="services">
+      <section className="py-24 bg-gray-50 text-center scroll-mt-32" id="services">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-light tracking-widest mb-6">
             OUR SIGNATURE SERVICES
@@ -237,7 +237,7 @@ export default function Home() {
       </section>
 
       {/* OUR PROCESS */}
-      <section className="py-24 bg-white" id="process">
+      <section className="py-24 bg-white scroll-mt-32" id="process">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-light tracking-widest mb-6">
@@ -298,7 +298,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-24 bg-gray-50" id="testimonials">
+      <section className="py-24 bg-gray-50 scroll-mt-32" id="testimonials">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-light tracking-widest mb-6">
@@ -430,17 +430,17 @@ export default function Home() {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3 text-gray-400">
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>contact@allcal.com</span>
+                <span>claudia@allureoncallista.com</span>
               </li>
 
               <li className="flex items-start gap-3 text-gray-400">
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>(305) 555-0100</span>
+                <span>+1 (407) 808-0148</span>
               </li>
 
               <li className="flex items-start gap-3 text-gray-400">
                 <Building2 className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Miami, FL</span>
+                <span>Orlando, FL</span>
               </li>
             </ul>
           </div>
