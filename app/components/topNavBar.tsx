@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import navLogo from "../../public/logoAC.png";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function TopNavBar() {
@@ -40,39 +40,60 @@ export default function TopNavBar() {
 
       {/* Desktop Links */}
       <div className="hidden lg:flex flex-row gap-8 text-lg">
-        <a className="hover:text-gray-300" href="#about">About Us</a>
+        <a className="hover:text-gray-300" href="#about">Why Us</a>
         <a className="hover:text-gray-300" href="#services">Services</a>
+        <a className="hover:text-gray-300" href="#team">Meet the Team</a>
         <a className="hover:text-gray-300" href="#testimonials">Testimonials</a>
         <a className="hover:text-gray-300" href="#contact">Contact Us</a>
       </div>
 
-      {/* Mobile Links */}
-      <div className="flex lg:hidden">
-          <div className="cursor-pointer text-gray-200 hover:text-white">
-            <Menu className="w-8 h-8" onClick={() => setMenuOpen(!isMenuOpen)}/>
-          </div>
+      {/* MOBILE NAV */}
+      <div className="lg:hidden relative">
 
-          <div 
-            className={`
-              absolute right-12 mt-12 bg-black rounded-xl transform transition-all ease-out duration-300 
-              ${isMenuOpen 
-                ? "opacity-100 scale-100 pointer-events-auto" 
-                : "opacity-0 scale-95 pointer-events-auto"}
-            `}
-          >
-            <ul className="flex flex-col gap-2 p-4">
-              <li><a className="hover:text-gray-300" href="#about">About Us</a></li>
-              <li><a className="hover:text-gray-300" href="#services">Services</a></li>
-              <li><a className="hover:text-gray-300" href="#testimonials">Testimonials</a></li>
-              <li><a className="hover:text-gray-300" href="#contact">Contact Us</a></li>
-            </ul>
-            
-            
-            
-            
+        {/* Toggle Button */}
+        <button
+          onClick={() => setMenuOpen(!isMenuOpen)}
+          className="text-gray-200 hover:text-white transition z-50"
+          aria-label="Toggle Menu"
+        >
+          {isMenuOpen ? (
+            <X className="w-8 h-8" />
+          ) : (
+            <Menu className="w-8 h-8" />
+          )}
+        </button>
 
-          </div>
+        {/* Full Screen Slide Menu */}
+        <div
+          className={`
+            fixed inset-0 bg-black
+            transform transition-transform duration-500 ease-in-out
+            ${isMenuOpen ? "translate-x-0" : "translate-x-full"}
+            flex items-center justify-center z-40
+          `}
+        >
+          <ul className="flex flex-col items-center gap-10 text-2xl font-light tracking-widest">
+            {[
+              { label: "About Us", href: "#about" },
+              { label: "Services", href: "#services" },
+              { label: "Meet the Team", href: "#team" },
+              { label: "Testimonials", href: "#testimonials" },
+              { label: "Contact Us", href: "#contact" },
+            ].map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="text-gray-200 hover:text-white transition"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
+
     </div>
   );
 }
