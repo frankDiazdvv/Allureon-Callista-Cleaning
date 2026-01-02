@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import navLogo from "../../public/logoAC.png";
+import navLogo from "../../public/logoAC_main.png";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 

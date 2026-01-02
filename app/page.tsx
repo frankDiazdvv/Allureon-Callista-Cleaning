@@ -1,5 +1,6 @@
 import TopNavBar from "./components/topNavBar";
 import ContactForm from "./components/contactusform";
+import InfoCard from "./components/infoCard";
 import {
   ShieldCheck,
   Gem,
@@ -71,6 +72,8 @@ export default function Home() {
     },
   ];
 
+  const cardBackgroundColor = "bg-primary";
+
 
   return (
     <>
@@ -106,7 +109,13 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 mt-8 md:mt-0 text-sm tracking-widest font-medium hover:bg-gray-100 transition"
+            className="
+              inline-flex items-center gap-2
+              bg-primary text-white
+              px-8 py-4
+              text-sm tracking-widest font-medium
+              hover:bg-accent transition
+            "
           >
             REQUEST CONSULTATION
             <ArrowRight className="w-4 h-4" />
@@ -117,7 +126,7 @@ export default function Home() {
       {/* WHY CHOOSE US */}
       <section className="py-24 bg-white text-center scroll-mt-32" id="about">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-light tracking-widest mb-6">
+          <h2 className="text-4xl tracking-widest text-primary mb-6">
             WHY CHOOSE US
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-16">
@@ -130,97 +139,89 @@ export default function Home() {
             <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <ShieldCheck className="w-12 h-12 text-yellow-500" />
+                  <ShieldCheck className="w-12 h-12 text-accent" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Certified & Compliant
               </h3>
-              <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
-                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
-                <p className="text-lg text-yellow-500 mb-2">
-                  Fully licensed and insured with industry certifications
-                </p>
-                <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
-                  <li>• OSHA 30 – General Industry</li>
-                  <li>• EPA – Safe Use of Chemicals</li>
-                  <li>• Bloodborne Pathogens Training</li>
-                  <li>• HazCom / SDS Management</li>
-                  <li>• ISSA CIMS (In Progress)</li>
-                </ul>
-              </div>
+              <InfoCard 
+                title="Fully licensed and insured with industry certifications"
+                details={[
+                  "OSHA 30 – General Industry",
+                  "EPA – Safe Use of Chemicals",
+                  "Bloodborne Pathogens Training",
+                  "HazCom / SDS Management",
+                  "ISSA CIMS (In Progress)"
+                ]}
+                bgColor={cardBackgroundColor}
+              />
             </div>
 
             <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <Gem className="w-12 h-12 text-yellow-500" />
+                  <Gem className="w-12 h-12 text-accent" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Luxury-Level Detailing
               </h3>
-               <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
-                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
-                  <p className="text-lg text-yellow-500 mb-2">
-                    White-glove service
-                  </p>
-                  <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
-                    <li>• Meticulous Cleaning of Elevators and Stairs</li>
-                    <li>• Metal/Stone Marble Floor Poloshing</li>
-                    <li>• Crystal Clear Glass Cleaning</li>
-                    <li>• Glossy Wood Restoration</li>
-                    <li>• Luxury Buildings</li>
-                  </ul>
-                </div>
+                <InfoCard
+                  title="White-glove service"
+                  details={[
+                    "Meticulous Cleaning of Elevators and Stairs",
+                    "Metal/Stone Marble Floor Poloshing",
+                    "Crystal Clear Glass Cleaning",
+                    "Glossy Wood Restoration",
+                    "Luxury Buildings",
+                  ]}
+                  bgColor={cardBackgroundColor}
+                />
             </div>
 
             <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <Users className="w-12 h-12 text-yellow-500" />
+                  <Users className="w-12 h-12 text-accent" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Professionally Trained Teams
               </h3>
-              <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
-                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
-                <p className="text-lg text-yellow-500 mb-2">
-                  Expert staff with training and quality assurance
-                </p>
-                <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
-                  <li>• Background Checks</li>
-                  <li>• Cross-Training Programs</li>
-                  <li>• Supervisor Workshops</li>
-                  <li>• Safety Protocol Updates</li>
-                  <li>• Quality Assurance Initiatives</li>
-                </ul>
-              </div>
+              <InfoCard
+                title="Expert staff with training and quality assurance"
+                details={[
+                  "Background Checks",
+                  "Cross-Training Programs",
+                  "Supervisor Workshops",
+                  "Safety Protocol Updates",
+                  "Quality Assurance Initiatives"
+                ]}
+                bgColor={cardBackgroundColor}
+              />
             </div>
 
             <div className="group relative">
               <div className="mb-6 flex justify-center">
                 <div className="p-6 bg-gray-50 group-hover:bg-gray-100 transition">
-                  <SprayCan className="w-12 h-12 text-yellow-500" />
+                  <SprayCan className="w-12 h-12 text-accent" />
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2">
                 Cutting-Edge Equipment
               </h3>
-              <div className="absolute top-full opacity-0 group-hover:opacity-100 transition-opacity duration-400 
-                              text-center text-sm bg-stone-900 p-4 rounded-xl shadow">
-                <p className="text-lg text-yellow-500 mb-2">
-                  Premium tools and eco-friendly solutions
-                </p>
-                <ul className="text-sm text-gray-100 space-y-1 text-left mx-auto w-fit">
-                  <li>• Advanced Cleaning Technology</li>
-                  <li>• High-Performance Machinery</li>
-                  <li>• Eco-Friendly Cleaning Agents</li>
-                  <li>• Energy-Efficiency Solutions</li>
-                  <li>• Reusable Supply Systems</li>
-                </ul>
-              </div>
+              <InfoCard
+                title="Premium tools and eco-friendly solutions"
+                details={[
+                  "Advanced Cleaning Technology",
+                  "High-Performance Machinery",
+                  "Eco-Friendly Cleaning Agents",
+                  "Energy-Efficiency Solutions",
+                  "Reusable Supply Systems"
+                ]}
+                bgColor={cardBackgroundColor}
+              />
             </div>
           </div>
         </div>
@@ -229,7 +230,7 @@ export default function Home() {
       {/* OUR SIGNATURE SERVICES */}
       <section className="py-24 bg-gray-50 text-center scroll-mt-32" id="services">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-light tracking-widest mb-6">
+          <h2 className="text-4xl tracking-widest text-primary mb-6">
             OUR SIGNATURE SERVICES
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-16">
@@ -291,7 +292,7 @@ export default function Home() {
       <section className="py-24 bg-white scroll-mt-32" id="process">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light tracking-widest mb-6">
+            <h2 className="text-4xl tracking-widest text-primary mb-6">
               OUR PROCESS
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -352,7 +353,7 @@ export default function Home() {
       <section className="py-28 bg-white scroll-mt-32" id="team">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
-          <h2 className="text-4xl font-light tracking-widest mb-4">
+          <h2 className="text-4xl tracking-widest text-primary mb-4">
             MEET OUR TEAM
           </h2>
 
@@ -384,13 +385,13 @@ export default function Home() {
                 {/* Hover Card */}
                 <div className="
                   absolute left-1/2 top-44 -translate-x-1/2
-                  w-72 bg-[#2f5d62] text-white
+                  w-72 bg-primary text-white
                   rounded-2xl shadow-xl p-6
                   opacity-0 scale-95
                   group-hover:opacity-100 group-hover:scale-100
                   transition-all duration-300
                   z-20
-                ">
+                ">  
                   <h4 className="font-medium text-lg">
                     {member.name}
                   </h4>
@@ -405,7 +406,7 @@ export default function Home() {
                   </ul>
 
                   <div className="border-t border-white/20 pt-4 text-sm italic opacity-90 flex gap-2">
-                    <Quote className="w-4 h-4 mt-1 flex-shrink-0" />
+                    <Quote className="w-4 h-4 mt-1 flex-shrink-0 text-accent" />
                     <span>{member.quote}</span>
                   </div>
                 </div>
@@ -421,7 +422,7 @@ export default function Home() {
       <section className="py-24 bg-gray-50 scroll-mt-32" id="testimonials">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-light tracking-widest mb-6">
+            <h2 className="text-4xl tracking-widest text-primary mb-6">
               CLIENT TESTIMONIALS
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -433,7 +434,7 @@ export default function Home() {
             <div className="bg-white p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-black text-black" />
+                  <Star key={i} className="w-5 h-5 fill-accent text-accent" />
                 ))}
               </div>
               <p className="text-gray-700 mb-6 italic">
@@ -447,7 +448,7 @@ export default function Home() {
             <div className="bg-white p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-black text-black" />
+                  <Star key={i} className="w-5 h-5 fill-accent text-accent" />
                 ))}
               </div>
               <p className="text-gray-700 mb-6 italic">
@@ -463,7 +464,7 @@ export default function Home() {
             <div className="bg-white p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-black text-black" />
+                  <Star key={i} className="w-5 h-5 fill-accent text-accent" />
                 ))}
               </div>
               <p className="text-gray-700 mb-6 italic">
@@ -483,7 +484,7 @@ export default function Home() {
       <ContactForm/>
 
       {/* FOOTER */}
-      <footer className="bg-black text-white py-16 px-6">
+      <footer className="bg-dark text-secondary py-16 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
           <div>
             <h3 className="text-2xl font-light tracking-widest mb-6">
@@ -591,7 +592,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-800 text-center">
+        <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-gray-500 text-center">
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} Allureon Callista. All Rights Reserved.
           </p>
