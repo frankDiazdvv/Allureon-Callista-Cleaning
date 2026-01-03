@@ -427,14 +427,14 @@ export default function Home() {
 
 
       {/* TESTIMONIALS */}
-      <section className="py-24 bg-gray-50 scroll-mt-32" id="testimonials">
+      <section className="py-24 bg-light scroll-mt-32" id="testimonials">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl tracking-widest text-primary mb-6">
               CLIENT TESTIMONIALS
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Trusted by leading organizations across Miami
+              Trusted by leading organizations across South Florida
             </p>
           </div>
 

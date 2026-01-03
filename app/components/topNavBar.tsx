@@ -31,7 +31,7 @@ export default function TopNavBar() {
           transition-all duration-300
           z-50
           ${scrolled
-            ? "py-2 bg-black/80 backdrop-blur-md"
+            ? "py-2 bg-dark backdrop-blur-md"
             : "py-4 bg-linear-to-b from-black/70 to-transparent"}
         `}
       >
