@@ -21,7 +21,7 @@ export default function MobileMenu({ open, onClose }: Props) {
   return (
     <div
       className={`
-        fixed inset-0 bg-black
+        fixed inset-0 bg-primary
         flex items-center justify-center
         transition-transform duration-500 ease-in-out
         z-[9999]
