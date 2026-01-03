@@ -28,7 +28,7 @@ export default function ContactForm() {
     <section className="py-24 bg-white scroll-mt-32" id="contact">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-light tracking-widest mb-6">
+          <h2 className="text-4xl tracking-widest mb-6">
             REQUEST A CONSULTATION
           </h2>
           <p className="text-gray-600 text-lg">
@@ -117,7 +117,7 @@ export default function ContactForm() {
           <div className="text-center">
             <button
               type="submit"
-              className="inline-flex items-center gap-2 bg-black text-white px-12 py-4 text-sm tracking-widest font-medium hover:bg-gray-800 transition"
+              className="inline-flex items-center gap-2 bg-dark text-white px-12 py-4 text-sm tracking-widest font-medium hover:bg-dark/80 transition cursor-pointer"
             >
               SUBMIT INQUIRY
               <ArrowRight className="w-4 h-4" />

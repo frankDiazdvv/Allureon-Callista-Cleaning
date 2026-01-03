@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import navLogo from "../../public/logoAC_main.png";
+import navLogo from "../../public/AC_logo_light_full.png";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
@@ -41,7 +41,7 @@ export default function TopNavBar() {
             alt="Allureon Callista Logo"
             width={scrolled ? 110 : 150}
             height={scrolled ? 70 : 100}
-            className="transition-all duration-300"
+            className="transition-all duration-300 cursor-pointer"
           />
         </button>
 
