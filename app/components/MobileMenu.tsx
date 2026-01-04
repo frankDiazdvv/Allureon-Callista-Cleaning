@@ -39,6 +39,7 @@ export default function MobileMenu({ open, onClose }: Props) {
 
       <ul className="flex flex-col items-center gap-10 text-2xl font-light tracking-widest">
         {[
+          { label: "Home", href: "#" },
           { label: "About Us", href: "#about" },
           { label: "Services", href: "#services" },
           { label: "Meet the Team", href: "#team" },

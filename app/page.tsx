@@ -91,7 +91,8 @@ export default function Home() {
           muted
           playsInline
         />
-        <div className="absolute inset-0 bg-dark/90"></div>
+        {/* Shadow */}
+        <div className="absolute inset-0 bg-dark/50"></div>
 
         {/* Hero Text + Button */}
         <div className="relative z-10 text-center px-4 max-w-full mx-auto">
@@ -603,10 +604,16 @@ export default function Home() {
             </ul>
           </div>
         </div>
-
+        
         <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-light text-center">
+          <ul className="flex flex-row justify-center gap-2 mb-6 text-sm">
+            <li><a href="" className="text-light hover:text-white">Privacy Policy |</a></li>
+            <li><a href="" className="text-light hover:text-white">Terms of Use |</a></li>
+            <li><a href="" className="text-light hover:text-white">Cookie Policy |</a></li>
+            <li><a href="" className="text-light hover:text-white">Accessibility</a></li>
+          </ul>
           <p className="text-light text-sm">
-            © {new Date().getFullYear()} Allureon Callista. All Rights Reserved.
+            © {new Date().getFullYear()} Allureon Callista, LLC. All Rights Reserved.
           </p>
         </div>
       </footer>
