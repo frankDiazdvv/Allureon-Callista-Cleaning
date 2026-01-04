@@ -92,7 +92,7 @@ export default function Home() {
           playsInline
         />
         {/* Shadow */}
-        <div className="absolute inset-0 bg-dark/50"></div>
+        <div className="absolute inset-0"></div>
 
         {/* Hero Text + Button */}
         <div className="relative z-10 text-center px-4 max-w-full mx-auto">
