@@ -23,6 +23,7 @@ import {
   Phone,
   Facebook,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -92,7 +93,7 @@ export default function Home() {
           playsInline
         />
         {/* Shadow */}
-        <div className="absolute inset-0"></div>
+        <div className="absolute bg-black/40 inset-0"></div>
 
         {/* Hero Text + Button */}
         <div className="relative z-10 text-center px-4 max-w-full mx-auto">
@@ -595,7 +596,9 @@ export default function Home() {
 
               <li className="flex items-start gap-3 text-light">
 
-                <Linkedin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <Link href="https://www.linkedin.com/company/allureon-callista">
+                  <Linkedin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                </Link>
               </li>
               <li className="flex items-start gap-3 text-light">
 
@@ -609,8 +612,8 @@ export default function Home() {
           <ul className="flex flex-row justify-center gap-2 mb-6 text-sm">
             <li><a href="" className="text-light hover:text-white">Privacy Policy |</a></li>
             <li><a href="" className="text-light hover:text-white">Terms of Use |</a></li>
-            <li><a href="" className="text-light hover:text-white">Cookie Policy |</a></li>
-            <li><a href="" className="text-light hover:text-white">Accessibility</a></li>
+            <li><a href="" className="text-light hover:text-white">Cookie Policy </a></li>
+            {/* <li><a href="" className="text-light hover:text-white">Accessibility</a></li> */}
           </ul>
           <p className="text-light text-sm">
             © {new Date().getFullYear()} Allureon Callista, LLC. All Rights Reserved.
