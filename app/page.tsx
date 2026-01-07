@@ -21,7 +21,7 @@ import {
   ArrowRight,
   Star,
   Phone,
-  Facebook,
+  Facebook
 } from "lucide-react";
 import Link from "next/link";
 
@@ -76,7 +76,7 @@ export default function Home() {
 
   const cardBackgroundColor = "bg-dark";
 
-
+  
   return (
     <>
       <TopNavBar />
@@ -93,7 +93,7 @@ export default function Home() {
           playsInline
         />
         {/* Shadow */}
-        <div className="absolute bg-black/40 inset-0"></div>
+        <div className="absolute bg-black/50 inset-0"></div>
 
         {/* Hero Text + Button */}
         <div className="relative z-10 text-center px-4 max-w-full mx-auto">
@@ -394,8 +394,9 @@ export default function Home() {
 
                 {/* Hover Card */}
                 <div className="
+                  hidden md:block
                   absolute left-1/2 top-44 -translate-x-1/2
-                  w-72 bg-dark text-white
+                  w-80 bg-dark text-white
                   rounded-2xl shadow-xl p-6
                   opacity-0 scale-95
                   group-hover:opacity-100 group-hover:scale-100
@@ -411,7 +412,7 @@ export default function Home() {
 
                   <ul className="text-sm space-y-2 mb-4 text-left">
                     {member.experience.map((item, i) => (
-                      <li key={i}>• {item}</li>
+                      <li key={i}><ShieldCheck className="w-4 h-4 inline mr-2" /> {item}</li>
                     ))}
                   </ul>
 
