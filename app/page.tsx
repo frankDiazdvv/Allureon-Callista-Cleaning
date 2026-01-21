@@ -96,41 +96,33 @@ export default function Home() {
         <div className="absolute bg-black/50 inset-0"></div>
 
         {/* Hero Text + Button */}
-        <div className="relative z-10 text-center px-4 max-w-full mx-auto">
-          <Image
-            src="/AC_logo_isotype_light.png"
-            alt="Logo"
-            width={500}
-            height={333} // keep correct aspect ratio
-            sizes="(max-width: 768px) 96px, (max-width: 1024px) 160px, 224px"
-            className="w-24 md:w-40 lg:w-56 h-auto inline-flex items-center mb-6"
-            priority
-          />
+<div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
 
+  {/* Tagline */}
+  <p className="text-sm md:text-base tracking-widest uppercase opacity-80 mb-4">
+    The Art of Refined Transformation
+  </p>
 
-          <h1 className="flex flex-wrap justify-center text-2xl xs:text-4xl md:text-5xl lg:text-7xl font-light tracking-wide drop-shadow-xl mb-6">
-            THE ART OF REFINED TRANSFORMATION
-          </h1>
+  {/* H1 */}
+  <h1 className="text-3xl md:text-5xl lg:text-6xl font-light tracking-wide drop-shadow-xl mb-6">
+    Executive-ready cleaning with documented standards and verified QA.
+  </h1>
 
-          <p className="flex flex-wrap justify-center text-lg md:text-2xl font-light opacity-90 mb-8">
-            Elevating spaces through meticulous care and unparalleled attention
-            to detail
-          </p>
+  {/* Sub */}
+  <p className="text-lg md:text-xl opacity-90 mb-10">
+    A compliance-driven janitorial partner for organizations that can’t afford variability.
+  </p>
 
-          <a
-            href="#contact"
-            className="
-              inline-flex items-center gap-2
-              bg-light text-dark
-              px-8 py-4
-              text-sm tracking-widest font-medium
-              hover:bg-light/80 transition
-            "
-          >
-            REQUEST CONSULTATION
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
+  {/* CTA */}
+  <a
+    href="#contact"
+    className="inline-flex items-center gap-2 bg-light text-dark px-8 py-4 text-sm tracking-widest font-medium hover:bg-light/80 transition"
+  >
+    Schedule a Facility Walkthrough
+    <ArrowRight className="w-4 h-4" />
+  </a>
+</div>
+
       </section>
 
       {/* WHY CHOOSE US */}
