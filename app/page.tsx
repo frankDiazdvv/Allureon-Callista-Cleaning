@@ -129,12 +129,13 @@ export default function Home() {
       <section className="py-24 bg-light text-center scroll-mt-32" id="about">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl tracking-widest text-primary mb-6">
-            WHY CHOOSE US
+            WHY ORGANIZATIONS CHOOSE ALLUREON CALLISTA
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-16">
-            We deliver an unmatched standard of cleanliness that transforms
-            environments and exceeds expectations
+
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-16">
+            Built for consistency, accountability, and risk control — with standards you can verify.
           </p>
+
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-black/80">
 
@@ -145,16 +146,14 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
-                Certified & Compliant
+                Compliance & Risk Control
               </h3>
               <InfoCard 
                 title="Fully licensed and insured with industry certifications"
                 details={[
-                  "OSHA 30 – General Industry",
-                  "EPA – Safe Use of Chemicals",
-                  "Bloodborne Pathogens Training",
-                  "HazCom / SDS Management",
-                  "ISSA CIMS (In Progress)"
+                  "HazCom / SDS-ready documentation",
+                  "Safety-trained teams (OSHA-aligned)",
+                  "Controlled access + background checks"                 
                 ]}
                 bgColor={cardBackgroundColor}
               />
@@ -167,17 +166,16 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
-                Luxury-Level Detailing
+                Verified quality  
               </h3>
                 <InfoCard
                   title="White-glove service"
                   details={[
-                    "Meticulous Cleaning of Elevators and Stairs",
-                    "Metal/Stone Marble Floor Poloshing",
-                    "Crystal Clear Glass Cleaning",
-                    "Glossy Wood Restoration",
-                    "Luxury Buildings",
+                    "Routine inspections + corrective actions",
+                    "Documented checklists by zone",
+                    "Supervisor oversight & QA reporting"
                   ]}
+
                   bgColor={cardBackgroundColor}
                 />
             </div>
@@ -189,16 +187,14 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
-                Professionally Trained Teams
+                Asset care for premium surfaces
               </h3>
               <InfoCard
                 title="Expert staff with training and quality assurance"
                 details={[
-                  "Background Checks",
-                  "Cross-Training Programs",
-                  "Supervisor Workshops",
-                  "Safety Protocol Updates",
-                  "Quality Assurance Initiatives"
+                  "Glass, metal, wood, stone & floor care",
+                  "Methods designed to protect finishes",
+                  "Detail work on “high-visibility” areas"
                 ]}
                 bgColor={cardBackgroundColor}
               />
@@ -211,21 +207,47 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
-                Cutting-Edge Equipment
+                Operational Reliability
               </h3>
               <InfoCard
                 title="Premium tools and eco-friendly solutions"
                 details={[
-                  "Advanced Cleaning Technology",
-                  "High-Performance Machinery",
-                  "Eco-Friendly Cleaning Agents",
-                  "Energy-Efficiency Solutions",
-                  "Reusable Supply Systems"
+                  "Cross-trained coverage to reduce variability",
+                  "Clear scope, frequencies, responsibilities",
+                  "Communication protocol for issues & requests"
                 ]}
                 bgColor={cardBackgroundColor}
               />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Security & Access Protocol */}
+      <section className="py-24 bg-mid text-center scroll-mt-32 h-full" id="security">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-4xl tracking-widest text-light mb-6">
+            SECURITY & ACCESS PROTOCOL
+          </h2>
+          <p className="text-light text-lg max-w-2xl mx-auto mb-16">
+            Clear procedures for keys, alarms, and after-hours access, so your facility stays protected.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-light">
+            <ul className="space-y-3 ">
+              <li>• Key / badge handling and return protocol</li>
+              <li>• Alarm arm/disarm procedures aligned to your schedule</li>
+              <li>• After-hours access rules and entry points</li>
+            </ul>
+
+            <ul className="space-y-3">
+              <li>• Restricted-area guidelines & escalation</li>
+              <li>• Supervisor contact & rapid response</li>
+            </ul> 
+          </div>
+          <p className="italic opacity-80 text-light mt-10">
+            Background-checked team members available upon request.
+          </p>
         </div>
       </section>
 
@@ -248,6 +270,7 @@ export default function Home() {
               </div>
               <p className="font-medium tracking-wide text-light">Corporate Offices</p>
             </div>
+            
 
             <div className="group">
               <div className="mb-4 flex justify-center">

@@ -5,7 +5,7 @@ export default function InfoCard( props: {title: string; details: string[], bgCo
         <div className={`
             hidden md:block
             absolute left-1/2 top-44 -translate-x-1/2
-            w-80 ${props.bgColor} text-white border-b border-white/20
+            w-90 ${props.bgColor} text-white border-b border-white/20
             rounded-2xl shadow-xl p-6
             opacity-0 scale-95
             group-hover:opacity-100 group-hover:scale-100
