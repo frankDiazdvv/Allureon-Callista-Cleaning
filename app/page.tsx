@@ -96,43 +96,43 @@ export default function Home() {
         <div className="absolute bg-black/50 inset-0"></div>
 
         {/* Hero Text + Button */}
-<div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
 
-  {/* Tagline */}
-  <p className="text-sm md:text-base tracking-widest uppercase opacity-80 mb-4">
-    The Art of Refined Transformation
-  </p>
+          {/* Tagline */}
+          <p className="text-sm md:text-base tracking-widest uppercase opacity-80 mb-4">
+            The Art of Refined Transformation
+          </p>
 
-  {/* H1 */}
-  <h1 className="text-3xl md:text-5xl lg:text-6xl font-light tracking-wide drop-shadow-xl mb-6">
-    Executive-ready cleaning with documented standards and verified QA.
-  </h1>
+          {/* H1 */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-light tracking-wide drop-shadow-xl mb-6">
+            Executive-ready cleaning with documented standards and verified QA.
+          </h1>
 
-  {/* Sub */}
-  <p className="text-lg md:text-xl opacity-90 mb-10">
-    A compliance-driven janitorial partner for organizations that can’t afford variability.
-  </p>
+          {/* Sub */}
+          <p className="text-lg md:text-xl opacity-90 mb-10">
+            A compliance-driven janitorial partner for organizations that can’t afford variability.
+          </p>
 
-  {/* CTA */}
-  <a
-    href="#contact"
-    className="inline-flex items-center gap-2 bg-light text-dark px-8 py-4 text-sm tracking-widest font-medium hover:bg-light/80 transition"
-  >
-    Schedule a Facility Walkthrough
-    <ArrowRight className="w-4 h-4" />
-  </a>
-</div>
+          {/* CTA */}
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 bg-light text-dark px-8 py-4 text-sm tracking-widest font-medium hover:bg-light/80 transition"
+          >
+            Schedule a Facility Walkthrough
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
 
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-24 bg-light text-center scroll-mt-32" id="about">
+      <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="about">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl tracking-widest text-primary mb-6">
+          <h2 className="text-4xl tracking-widest text-light mb-6">
             WHY ORGANIZATIONS CHOOSE ALLUREON CALLISTA
           </h2>
 
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto mb-16">
+          <p className="text-light/80 text-lg max-w-3xl mx-auto mb-16 md:mb-24">
             Built for consistency, accountability, and risk control — with standards you can verify.
           </p>
 
@@ -141,11 +141,11 @@ export default function Home() {
 
             <div className="group relative">
               <div className="mb-6 flex justify-center">
-                <div className="p-6 bg-light group-hover:bg-dark/10 transition">
-                  <ShieldCheck className="w-12 h-12 text-dark" />
+                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
+                  <ShieldCheck className="w-12 h-12 text-light" />
                 </div>
               </div>
-              <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
+              <h3 className="font-medium text-lg tracking-wide mb-2 text-light">
                 Compliance & Risk Control
               </h3>
               <InfoCard 
@@ -161,11 +161,11 @@ export default function Home() {
 
             <div className="group relative">
               <div className="mb-6 flex justify-center">
-                <div className="p-6 bg-light group-hover:bg-dark/10 transition">
-                  <Gem className="w-12 h-12 text-dark" />
+                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
+                  <Gem className="w-12 h-12 text-light" />
                 </div>
               </div>
-              <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
+              <h3 className="font-medium text-lg tracking-wide mb-2 text-light">
                 Verified quality  
               </h3>
                 <InfoCard
@@ -182,11 +182,11 @@ export default function Home() {
 
             <div className="group relative">
               <div className="mb-6 flex justify-center">
-                <div className="p-6 bg-light group-hover:bg-dark/10 transition">
-                  <Users className="w-12 h-12 text-dark" />
+                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
+                  <Users className="w-12 h-12 text-light" />
                 </div>
               </div>
-              <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
+              <h3 className="font-medium text-lg tracking-wide mb-2 text-light">
                 Asset care for premium surfaces
               </h3>
               <InfoCard
@@ -202,11 +202,11 @@ export default function Home() {
 
             <div className="group relative">
               <div className="mb-6 flex justify-center">
-                <div className="p-6 bg-light group-hover:bg-dark/10 transition">
-                  <SprayCan className="w-12 h-12 text-dark" />
+                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
+                  <SprayCan className="w-12 h-12 text-light" />
                 </div>
               </div>
-              <h3 className="font-medium text-lg tracking-wide mb-2 text-dark">
+              <h3 className="font-medium text-lg tracking-wide mb-2 text-light">
                 Operational Reliability
               </h3>
               <InfoCard
@@ -224,17 +224,17 @@ export default function Home() {
       </section>
 
       {/* Security & Access Protocol */}
-      <section className="py-24 bg-mid text-center scroll-mt-32 h-full" id="security">
+      <section className="py-24 bg-light text-center scroll-mt-32 h-full" id="security">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl tracking-widest text-light mb-6">
+          <h2 className="text-4xl tracking-widest text-dark mb-6">
             SECURITY & ACCESS PROTOCOL
           </h2>
-          <p className="text-light text-lg max-w-2xl mx-auto mb-16">
+          <p className="text-dark text-lg max-w-2xl mx-auto mb-16">
             Clear procedures for keys, alarms, and after-hours access, so your facility stays protected.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-light">
-            <ul className="space-y-3 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-dark">
+            <ul className="space-y-3">
               <li>• Key / badge handling and return protocol</li>
               <li>• Alarm arm/disarm procedures aligned to your schedule</li>
               <li>• After-hours access rules and entry points</li>
@@ -245,19 +245,19 @@ export default function Home() {
               <li>• Supervisor contact & rapid response</li>
             </ul> 
           </div>
-          <p className="italic opacity-80 text-light mt-10">
+          <p className="italic opacity-80 text-dark mt-10">
             Background-checked team members available upon request.
           </p>
         </div>
       </section>
 
       {/* OUR SIGNATURE SERVICES */}
-      <section className="py-24 bg-dark text-center scroll-mt-32" id="services">
+      <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="services">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl tracking-widest text-light mb-6">
             OUR SIGNATURE SERVICES
           </h2>
-          <p className="text-light text-lg max-w-2xl mx-auto mb-16">
+          <p className="text-light text-lg max-w-2xl mx-auto mb-16 md:mb-24">
             Tailored solutions for distinguished commercial environments
           </p>
 
@@ -270,6 +270,26 @@ export default function Home() {
               </div>
               <p className="font-medium tracking-wide text-light">Corporate Offices</p>
             </div>
+
+            {/* <div className="p-6 bg-dark hover:bg-light/10 transition shadow-sm">
+              <Building2 className="w-12 h-12 text-light" />
+              <h4 className="text-light font-medium mb-2">
+                Corporate Offices
+              </h4>
+              <p className="text-sm text-light/80 mb-4">
+                Executive-ready, client-facing standards
+              </p>
+
+              <p className="text-xs uppercase tracking-widest text-light/60 mb-2">
+                Focus Areas
+              </p>
+              <ul className="text-sm text-light/80 space-y-1">
+                <li>• Lobbies & conference rooms</li>
+                <li>• Glass & restrooms</li>
+                <li>• High-touch points</li>
+              </ul>
+            </div> */}
+
             
 
             <div className="group">
