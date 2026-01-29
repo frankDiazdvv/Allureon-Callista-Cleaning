@@ -353,11 +353,10 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl font-medium tracking-wide mb-3">
-                Consultation
+                Walkthrough & Scope Mapping
               </h3>
               <p className="text-gray-600">
-                We assess your space and understand your unique requirements to
-                create a customized cleaning plan
+                  Define zones, frequencies, risk areas, surfaces, and access rules.
               </p>
             </div>
 
@@ -368,11 +367,11 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl font-medium tracking-wide mb-3">
-                Execution
+                Standards Implementation
+
               </h3>
               <p className="text-gray-600">
-                Our trained team delivers meticulous service using premium
-                equipment and eco-friendly products
+                Checklists, supplies, training alignment, and service calibration.
               </p>
             </div>
 
@@ -383,11 +382,10 @@ export default function Home() {
                 </div>
               </div>
               <h3 className="text-xl font-medium tracking-wide mb-3">
-                Quality Assurance
+                Verification & Continuous QA
               </h3>
               <p className="text-gray-600">
-                We conduct thorough inspections to ensure every detail meets our
-                exacting standards
+                Inspections, reporting, corrective actions, and monthly reviews.
               </p>
             </div>
           </div>
@@ -399,12 +397,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl tracking-widest text-light mb-4">
-            MEET OUR TEAM
+              OPERATIONS-LED. STANDARDS-DRIVEN.
+
           </h2>
 
           <p className="text-light text-lg max-w-2xl mx-auto mb-20">
-            Experienced professionals, dedicated to excellence.
-          </p>
+            Your account is managed with defined supervision, documented checklists,
+            and QA verification, so results don’t depend on who shows up.
+            </p>
 
           <div className="flex flex-wrap justify-center gap-12 relative">
             {team.map((member, index) => (
@@ -611,7 +611,7 @@ export default function Home() {
 
               <li className="flex items-start gap-3 text-light">
                 <Building2 className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Orlando, FL</span>
+                <span>Orlando • Lake Nona • Central Florida</span>
               </li>
             </ul>
           </div>

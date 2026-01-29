@@ -29,10 +29,10 @@ export default function ContactForm() {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl tracking-widest mb-6">
-            REQUEST A CONSULTATION
+            SCHEDULE A FACILITY WALKTHROUGH
           </h2>
           <p className="text-gray-600 text-lg">
-            Experience the Allureon Callista difference
+            Tell us your location and facility type. We’ll confirm scope, standards, and next steps.
           </p>
         </div>
 
