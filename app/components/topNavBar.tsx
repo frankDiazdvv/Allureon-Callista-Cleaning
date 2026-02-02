@@ -46,7 +46,7 @@ export default function TopNavBar() {
         </button>
 
         {/* Desktop */}
-        <div className="hidden lg:flex gap-8 text-lg text-white">
+        <div className="hidden lg:flex gap-8 text-lg text-light">
           <a href="#about">Why Us</a>
           <a href="#services">Services</a>
           <a href="#team">Meet the Team</a>

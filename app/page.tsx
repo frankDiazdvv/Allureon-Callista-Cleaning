@@ -96,7 +96,7 @@ export default function Home() {
         <div className="absolute bg-black/50 inset-0"></div>
 
         {/* Hero Text + Button */}
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div className="relative md:absolute md:left-24 md:bottom-32 z-10 text-center md:text-left px-4 max-w-4xl">
 
           {/* Tagline */}
           <p className="text-sm md:text-base text-light tracking-widest uppercase opacity-80 mb-4">
@@ -116,7 +116,7 @@ export default function Home() {
           {/* CTA */}
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 bg-light text-dark px-8 py-4 text-sm tracking-widest font-medium hover:bg-light/80 transition"
+            className="inline-flex items-center gap-2 bg-dark text-light px-8 py-4 text-sm tracking-widest font-medium hover:bg-dark/60 transition"
           >
             Schedule a Facility Walkthrough
             <ArrowRight className="w-4 h-4" />
@@ -223,33 +223,63 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Security & Access Protocol */}
-      <section className="py-24 bg-light text-center scroll-mt-32 h-full" id="security">
-        <div className="max-w-6xl mx-auto px-6">
+     {/* Security & Access Protocol */}
+      <section
+        className="py-24 bg-light scroll-mt-32 h-dvh flex items-center"
+        id="security"
+      >
+        <div className="max-w-6xl mx-auto px-6 text-center w-full">
           <h2 className="text-4xl tracking-widest text-dark mb-6">
             SECURITY & ACCESS PROTOCOL
           </h2>
+
           <p className="text-dark text-lg max-w-2xl mx-auto mb-16">
             Clear procedures for keys, alarms, and after-hours access, so your facility stays protected.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-dark">
-            <ul className="space-y-3">
-              <li>• Key / badge handling and return protocol</li>
-              <li>• Alarm arm/disarm procedures aligned to your schedule</li>
-              <li>• After-hours access rules and entry points</li>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
+            {/* Column 1 */}
+            <ul className="space-y-4">
+              {[
+                "Key / badge handling and return protocol",
+                "Alarm arm/disarm procedures aligned to your schedule",
+                "After-hours access rules and entry points",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="group flex items-start gap-4 p-4 rounded-lg border border-dark/10 
+                            hover:bg-dark/5 hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  <span className="mt-1 h-2 w-2 rounded-full bg-dark shrink-0 group-hover:scale-125 transition" />
+                  <span className="text-dark">{item}</span>
+                </li>
+              ))}
             </ul>
 
-            <ul className="space-y-3">
-              <li>• Restricted-area guidelines & escalation</li>
-              <li>• Supervisor contact & rapid response</li>
-            </ul> 
+            {/* Column 2 */}
+            <ul className="space-y-4">
+              {[
+                "Restricted-area guidelines & escalation",
+                "Supervisor contact & rapid response",
+              ].map((item) => (
+                <li
+                  key={item}
+                  className="group flex items-start gap-4 p-4 rounded-lg border border-dark/10 
+                            hover:bg-dark/5 hover:-translate-y-0.5 transition-all duration-200"
+                >
+                  <span className="mt-1 h-2 w-2 rounded-full bg-dark shrink-0 group-hover:scale-125 transition" />
+                  <span className="text-dark">{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <p className="italic opacity-80 text-dark mt-10">
+
+          <p className="italic opacity-80 text-dark mt-12 text-center">
             Background-checked team members available upon request.
           </p>
         </div>
       </section>
+
 
       {/* OUR SIGNATURE SERVICES */}
       <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="services">
@@ -334,7 +364,7 @@ export default function Home() {
       </section>
 
       {/* OUR PROCESS */}
-      <section className="py-24 bg-light scroll-mt-32" id="process">
+      <section className="flex items-center py-24 bg-light scroll-mt-32 h-dvh" id="process">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl tracking-widest text-primary mb-6">
@@ -393,7 +423,7 @@ export default function Home() {
       </section>
 
       {/* MEET OUR TEAM */}
-      <section className="py-28 bg-mid scroll-mt-32" id="team">
+      <section className="flex items-center h-dvh py-28 bg-mid scroll-mt-32" id="team">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl tracking-widest text-light mb-4">
