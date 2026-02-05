@@ -96,7 +96,7 @@ export default function Home() {
         <div className="absolute bg-black/50 inset-0"></div>
 
         {/* Hero Text + Button */}
-        <div className="relative lg:absolute lg:left-24 lg:bottom-32 z-10 text-center lg:text-left px-4 md:px-0 max-w-4xl">
+        <div className="relative lg:absolute lg:left-26 lg:bottom-32 z-10 text-center lg:text-left px-4 md:px-0 max-w-4xl">
 
           {/* Tagline */}
           <p className="text-sm md:text-base text-light tracking-widest uppercase opacity-80 mb-4">
