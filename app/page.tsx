@@ -96,7 +96,7 @@ export default function Home() {
         <div className="absolute bg-black/50 inset-0"></div>
 
         {/* Hero Text + Button */}
-        <div className="relative md:absolute md:left-24 md:bottom-32 z-10 text-center md:text-left px-4 max-w-4xl">
+        <div className="relative lg:absolute lg:left-24 lg:bottom-32 z-10 text-center lg:text-left px-4 md:px-0 max-w-4xl">
 
           {/* Tagline */}
           <p className="text-sm md:text-base text-light tracking-widest uppercase opacity-80 mb-4">
@@ -423,7 +423,7 @@ export default function Home() {
       </section>
 
       {/* MEET OUR TEAM */}
-      <section className="flex items-center h-dvh py-28 bg-mid scroll-mt-32" id="team">
+      {/* <section className="flex items-center h-dvh py-28 bg-mid scroll-mt-32" id="team">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl tracking-widest text-light mb-4">
@@ -440,7 +440,6 @@ export default function Home() {
             {team.map((member, index) => (
               <div key={index} className="group relative">
 
-                {/* Avatar */}
                 <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-light shadow-lg mx-auto">
                   <img
                     src={member.image}
@@ -449,7 +448,6 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Name + Role */}
                 <h3 className="mt-6 font-medium tracking-wide text-light">
                   {member.name}
                 </h3>
@@ -457,7 +455,6 @@ export default function Home() {
                   {member.role}
                 </p>
 
-                {/* Hover Card */}
                 <div className="
                   hidden md:block
                   absolute left-1/2 top-44 -translate-x-1/2
@@ -491,29 +488,29 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* TESTIMONIALS */}
-      <section className="py-24 bg-light scroll-mt-32" id="testimonials">
+      <section className="py-24 bg-dark scroll-mt-32" id="testimonials">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl tracking-widest text-primary mb-6">
+            <h2 className="text-4xl tracking-widest text-light mb-6">
               CLIENT TESTIMONIALS
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            <p className="text-light text-lg max-w-2xl mx-auto">
               Trusted by leading organizations across South Florida
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 shadow-sm">
+            <div className="bg-light p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-mid text-mid" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 italic">
+              <p className="text-gray-900 mb-6 italic">
                 "Allureon Callista transformed our corporate headquarters. Their
                 attention to detail is simply unmatched. Every surface gleams."
               </p>
@@ -521,13 +518,13 @@ export default function Home() {
               <p className="text-sm text-gray-500">CEO, Tech Innovations</p>
             </div>
 
-            <div className="bg-white p-8 shadow-sm">
+            <div className="bg-light p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-mid text-mid" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 italic">
+              <p className="text-gray-900 mb-6 italic">
                 "We've worked with several cleaning services, but none compare
                 to the professionalism and quality Allureon brings every time."
               </p>
@@ -537,13 +534,13 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-white p-8 shadow-sm">
+            <div className="bg-light p-8 shadow-sm">
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-mid text-mid" />
                 ))}
               </div>
-              <p className="text-gray-700 mb-6 italic">
+              <p className="text-gray-900 mb-6 italic">
                 "Their team is reliable, thorough, and treats our facility with
                 the utmost care. Exceptional service from start to finish."
               </p>

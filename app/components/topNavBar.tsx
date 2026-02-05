@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import navLogo from "../../public/AC_logo_light_full.png";
+import navLogo from "../../public/AllCallLogo.svg";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
@@ -27,7 +27,7 @@ export default function TopNavBar() {
         className={`
           fixed top-0 left-0 right-0
           flex justify-between items-center
-          px-6 lg:px-24
+          px-6 lg:px-20
           transition-all duration-300
           z-50
           ${scrolled
@@ -39,8 +39,8 @@ export default function TopNavBar() {
           <Image
             src={navLogo}
             alt="Allureon Callista Logo"
-            width={scrolled ? 110 : 150}
-            height={scrolled ? 70 : 100}
+            width={scrolled ? 210 : 250}
+            height={scrolled ? 170 : 200}
             className="transition-all duration-300 cursor-pointer"
           />
         </button>
@@ -49,7 +49,7 @@ export default function TopNavBar() {
         <div className="hidden lg:flex gap-8 text-lg text-light">
           <a href="#about">Why Us</a>
           <a href="#services">Services</a>
-          <a href="#team">Meet the Team</a>
+          {/* <a href="#team">Meet the Team</a> */}
           <a href="#testimonials">Testimonials</a>
           <a href="#contact">Contact Us</a>
         </div>
