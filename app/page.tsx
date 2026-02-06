@@ -224,8 +224,7 @@ export default function Home() {
       </section>
 
      {/* Security & Access Protocol */}
-      <section
-        className="py-24 bg-light scroll-mt-32 h-dvh flex items-center"
+      <section className="flex flex-col py-24 bg-light items-center justify-center scroll-mt-32 min-h-screen"
         id="security"
       >
         <div className="max-w-6xl mx-auto px-6 text-center w-full">
@@ -364,7 +363,7 @@ export default function Home() {
       </section>
 
       {/* OUR PROCESS */}
-      <section className="flex items-center py-24 bg-light scroll-mt-32 h-dvh" id="process">
+      <section className="flex flex-col py-24 bg-light items-center justify-center scroll-mt-32 min-h-screen" id="process">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl tracking-widest text-primary mb-6">
