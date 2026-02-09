@@ -9,6 +9,8 @@ export default function ContactForm() {
     email: "",
     phone: "",
     service: "",
+    zip: "",
+    sqFootage: "",
     message: "",
   });
 
@@ -21,7 +23,7 @@ export default function ContactForm() {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert("Thank you for your inquiry. We will contact you shortly.");
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", service: "", zip: "", sqFootage: "", message: "" });
   };
 
   return (
@@ -48,7 +50,7 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 focus:border-black focus:outline-none"
+                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
               />
             </div>
 
@@ -62,7 +64,7 @@ export default function ContactForm() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full px-4 py-3 border border-gray-300 focus:border-black focus:outline-none"
+                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
               />
             </div>
           </div>
@@ -70,26 +72,27 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <label className="block text-sm tracking-wide mb-2 font-medium">
-                PHONE
+                PHONE *
               </label>
               <input
                 type="tel"
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 focus:border-black focus:outline-none"
+                required
+                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
               />
             </div>
 
             <div>
               <label className="block text-sm tracking-wide mb-2 font-medium">
-                SERVICE TYPE
+                FACILITY TYPE
               </label>
               <select
                 name="service"
                 value={formData.service}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 focus:border-black focus:outline-none"
+                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
               >
                 <option value="">Select a service</option>
                 <option value="corporate">Corporate Offices</option>
@@ -98,6 +101,37 @@ export default function ContactForm() {
                 <option value="manufacturing">Manufacturing Facilities</option>
                 <option value="luxury">Luxury Buildings</option>
               </select>
+            </div>
+            
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-sm tracking-wide mb-2 font-medium">
+                LOCATION/ZIP *
+              </label>
+              <input
+                type="text"
+                name="zip"
+                value={formData.zip}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm tracking-wide mb-2 font-medium">
+                SQUARE FOOTAGE(RANGE) *
+              </label>
+              <input
+                type="text"
+                name="squareFootage"
+                value={formData.sqFootage}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
+              />
             </div>
           </div>
 
@@ -110,8 +144,10 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               rows={5}
-              className="w-full px-4 py-3 border border-gray-300 focus:border-black focus:outline-none resize-none"
+              className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none resize-none"
             ></textarea>
+
+            <p className="italic text-dark/70">Expect a respond within 1-2 business days*</p>
           </div>
 
           <div className="text-center">
