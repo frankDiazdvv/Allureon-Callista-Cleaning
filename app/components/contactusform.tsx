@@ -20,9 +20,33 @@ export default function ContactForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Thank you for your inquiry. We will contact you shortly.");
+
+    const res = await fetch("/api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        service: formData.service,
+        zip: formData.zip,
+        sqFootage: formData.sqFootage,
+        message: formData.message,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      alert("Thank you for your inquiry. We will contact you shortly.");
+
+    } else {
+      alert("Something went wrong. Try again later!");
+    }
     setFormData({ name: "", email: "", phone: "", service: "", zip: "", sqFootage: "", message: "" });
   };
 
@@ -126,7 +150,7 @@ export default function ContactForm() {
               </label>
               <input
                 type="text"
-                name="squareFootage"
+                name="sqFootage"
                 value={formData.sqFootage}
                 onChange={handleChange}
                 required

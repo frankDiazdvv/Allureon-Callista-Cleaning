@@ -129,7 +129,7 @@ export default function Home() {
       <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="about">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl tracking-widest text-light mb-6">
-            WHY ORGANIZATIONS CHOOSE ALLUREON CALLISTA
+            THE DIFFERENCE
           </h2>
 
           <p className="text-light/80 text-lg max-w-3xl mx-auto mb-16 md:mb-24">
