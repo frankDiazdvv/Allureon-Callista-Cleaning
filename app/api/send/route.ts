@@ -11,7 +11,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "Allureon Callista <info@allureoncallista.com>", // change once DNS verified
-      to: "info@allureoncallista.com",
+      to: "fmdiaz1802@gmail.com",
       subject: "Message from Allureon Callista Website / Mensaje del Sitio Web de Allureon Callista",
       react: EmailTemplate({
         name,

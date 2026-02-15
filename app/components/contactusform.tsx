@@ -110,28 +110,6 @@ export default function ContactForm() {
 
             <div>
               <label className="block text-sm tracking-wide mb-2 font-medium">
-                FACILITY TYPE
-              </label>
-              <select
-                name="service"
-                value={formData.service}
-                onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
-              >
-                <option value="">Select a service</option>
-                <option value="corporate">Corporate Offices</option>
-                <option value="retail">Retail Spaces</option>
-                <option value="banks">Banks & Institutions</option>
-                <option value="manufacturing">Manufacturing Facilities</option>
-                <option value="luxury">Luxury Buildings</option>
-              </select>
-            </div>
-            
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-sm tracking-wide mb-2 font-medium">
                 LOCATION/ZIP *
               </label>
               <input
@@ -143,6 +121,32 @@ export default function ContactForm() {
                 className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
               />
             </div>
+
+            
+            
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label className="block text-sm tracking-wide mb-2 font-medium">
+                FACILITY TYPE
+              </label>
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none"
+              >
+                <option value="No Selection">Select a service</option>
+                <option value="Corporate Offices">Corporate Offices</option>
+                <option value="Retail Spaces">Retail Spaces</option>
+                <option value="Banks & Institutions">Banks & Institutions</option>
+                <option value="Manufacturing Facilities">Manufacturing Facilities</option>
+                <option value="Luxury Buildings">Luxury Buildings</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            
 
             <div>
               <label className="block text-sm tracking-wide mb-2 font-medium">
