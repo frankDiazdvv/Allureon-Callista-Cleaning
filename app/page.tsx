@@ -128,7 +128,7 @@ export default function Home() {
       {/* WHY CHOOSE US */}
       <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="about">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl tracking-widest text-light mb-6">
+          <h2 className="text-4xl tracking-widest text-light mb-10">
             THE DIFFERENCE
           </h2>
 
@@ -228,7 +228,7 @@ export default function Home() {
         id="security"
       >
         <div className="max-w-6xl mx-auto px-6 text-center w-full">
-          <h2 className="text-4xl tracking-widest text-dark mb-6">
+          <h2 className="text-4xl tracking-widest text-dark mb-10">
             SECURITY & ACCESS PROTOCOL
           </h2>
 
@@ -283,7 +283,7 @@ export default function Home() {
       {/* OUR SIGNATURE SERVICES */}
       <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="services">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl tracking-widest text-light mb-6">
+          <h2 className="text-4xl tracking-widest text-light mb-10">
             OUR SIGNATURE SERVICES
           </h2>
           <p className="text-light text-lg max-w-2xl mx-auto mb-16 md:mb-24">
@@ -366,7 +366,7 @@ export default function Home() {
       <section className="flex flex-col py-24 bg-light items-center justify-center scroll-mt-32 min-h-screen" id="process">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl tracking-widest text-primary mb-6">
+            <h2 className="text-4xl tracking-widest text-primary mb-10">
               OUR PROCESS
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
@@ -494,7 +494,7 @@ export default function Home() {
       <section className="py-24 bg-dark scroll-mt-32" id="testimonials">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl tracking-widest text-light mb-6">
+            <h2 className="text-4xl tracking-widest text-light mb-10">
               CLIENT TESTIMONIALS
             </h2>
             <p className="text-light text-lg max-w-2xl mx-auto">

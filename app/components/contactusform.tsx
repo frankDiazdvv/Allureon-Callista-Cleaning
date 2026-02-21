@@ -175,7 +175,7 @@ export default function ContactForm() {
               className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none resize-none"
             ></textarea>
 
-            <p className="italic text-dark/70">Expect a respond within 1-2 business days*</p>
+            <p className="italic text-dark/70">Expect a respond within 24 hours*</p>
           </div>
 
           <div className="text-center">
@@ -187,6 +187,15 @@ export default function ContactForm() {
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
+          {/* <div className="text-center">
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 bg-dark text-white px-12 py-4 text-sm tracking-widest font-medium hover:bg-dark/80 transition cursor-pointer"
+            >
+              Book a 15 min consultation
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div> */}
         </form>
       </div>
     </section>
