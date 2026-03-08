@@ -5,6 +5,7 @@ import navLogo from "../../public/AllCallLogo.svg";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
+import WhoWeAre from "../pages/who-we-are/page";
 
 export default function TopNavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -47,11 +48,12 @@ export default function TopNavBar() {
 
         {/* Desktop */}
         <div className="hidden lg:flex gap-8 text-lg text-light">
-          <a href="#about">Why Us</a>
-          <a href="#services">Services</a>
+          <a href="/pages/who-we-are">Who We Are</a>
+          <a href="/#about">Why Us</a>
+          <a href="/#services">Services</a>
           {/* <a href="#team">Meet the Team</a> */}
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact Us</a>
+          <a href="/#testimonials">Testimonials</a>
+          <a href="/#contact">Contact Us</a>
         </div>
 
         {/* Mobile Toggle */}

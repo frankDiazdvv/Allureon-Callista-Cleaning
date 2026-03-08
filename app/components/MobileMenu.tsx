@@ -39,12 +39,13 @@ export default function MobileMenu({ open, onClose }: Props) {
 
       <ul className="flex flex-col items-center gap-10 text-2xl font-light tracking-widest">
         {[
-          { label: "Home", href: "#" },
-          { label: "Why Us", href: "#about" },
-          { label: "Services", href: "#services" },
+          { label: "Home", href: "/#" },
+          { label: "Who We Are", href: "/pages/who-we-are" },
+          { label: "Why Us", href: "/#about" },
+          { label: "Services", href: "/#services" },
           // { label: "Meet the Team", href: "#team" },
-          { label: "Testimonials", href: "#testimonials" },
-          { label: "Contact Us", href: "#contact" },
+          { label: "Testimonials", href: "/#testimonials" },
+          { label: "Contact Us", href: "/#contact" },
         ].map((item) => (
           <li key={item.href}>
             <a
