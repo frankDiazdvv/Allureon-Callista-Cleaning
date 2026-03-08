@@ -2,6 +2,7 @@ import TopNavBar from "./components/topNavBar";
 import ContactForm from "./components/contactusform";
 import InfoCard from "./components/infoCard";
 import Image from "next/image";
+import IndustriesCarousel from "./components/IndustriesCarousel";
 import {
   ShieldCheck,
   Gem,
@@ -280,97 +281,35 @@ export default function Home() {
       </section>
 
 
-      {/* OUR SIGNATURE SERVICES */}
-      <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="services">
+      {/* INDUSTRIES WE SERVE */}
+      <section
+        className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen"
+        id="services"
+      >
         <div className="max-w-6xl mx-auto px-6">
+
           <h2 className="text-4xl tracking-widest text-light mb-10">
-            OUR SIGNATURE SERVICES
+            INDUSTRIES WE SERVE
           </h2>
+
           <p className="text-light text-lg max-w-2xl mx-auto mb-16 md:mb-24">
             Tailored solutions for distinguished commercial environments
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 text-black/80">
-            <div className="group">
-              <div className="mb-4 flex justify-center">
-                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
-                  <Building2 className="w-12 h-12 text-light" />
-                </div>
-              </div>
-              <p className="font-medium tracking-wide text-light">Corporate Offices</p>
-            </div>
+          <IndustriesCarousel />
 
-            {/* <div className="p-6 bg-dark hover:bg-light/10 transition shadow-sm">
-              <Building2 className="w-12 h-12 text-light" />
-              <h4 className="text-light font-medium mb-2">
-                Corporate Offices
-              </h4>
-              <p className="text-sm text-light/80 mb-4">
-                Executive-ready, client-facing standards
-              </p>
-
-              <p className="text-xs uppercase tracking-widest text-light/60 mb-2">
-                Focus Areas
-              </p>
-              <ul className="text-sm text-light/80 space-y-1">
-                <li>• Lobbies & conference rooms</li>
-                <li>• Glass & restrooms</li>
-                <li>• High-touch points</li>
-              </ul>
-            </div> */}
-
-            
-
-            <div className="group">
-              <div className="mb-4 flex justify-center">
-                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
-                  <Store className="w-12 h-12 text-light" />
-                </div>
-              </div>
-              <p className="font-medium tracking-wide text-light">Retail Spaces</p>
-            </div>
-
-            <div className="group">
-              <div className="mb-4 flex justify-center">
-                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
-                  <Landmark className="w-12 h-12 text-light" />
-                </div>
-              </div>
-              <p className="font-medium tracking-wide text-light">Banks & Institutions</p>
-            </div>
-
-            <div className="group">
-              <div className="mb-4 flex justify-center">
-                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
-                  <Factory className="w-12 h-12 text-light" />
-                </div>
-              </div>
-              <p className="font-medium tracking-wide text-light">
-                Manufacturing Facilities
-              </p>
-            </div>
-
-            <div className="group">
-              <div className="mb-4 flex justify-center">
-                <div className="p-6 bg-dark group-hover:bg-light/10 transition shadow-sm">
-                  <Building className="w-12 h-12 text-light" />
-                </div>
-              </div>
-              <p className="font-medium tracking-wide text-light">Luxury Buildings</p>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* OUR PROCESS */}
-      <section className="flex flex-col py-24 bg-light items-center justify-center scroll-mt-32 min-h-screen" id="process">
+      {/* OUR SIGNATURE PROCESS */}
+      <section className="flex flex-col pt-24 bg-light items-center justify-center scroll-mt-32 min-h-screen" id="process">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl tracking-widest text-primary mb-10">
-              OUR PROCESS
+              OUR SIGNATURE PROCESS
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              A seamless journey from consultation to completion
+              Structure - Clarity - Accountability
             </p>
           </div>
 
@@ -418,6 +357,90 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* SERVICE PROGRAMS */}
+      <section className="bg-light pb-42">
+        <div className="max-w-6xl mx-auto px-6">
+
+          <div className="text-center mb-20">
+            <h2 className="text-4xl tracking-widest text-dark mb-6">
+              SERVICE PROGRAMS
+            </h2>
+
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Three structured service tiers designed to match the operational
+              needs of modern organizations.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-10">
+
+            {/* CORECARE */}
+            <div className="group bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+              <p className="text-xs tracking-widest text-mid uppercase mb-4">
+                Foundation Tier
+              </p>
+
+              <h3 className="text-2xl tracking-wide text-dark mb-8">
+                CoreCare
+              </h3>
+
+              <Link
+                href="/pages/service-programs#corecare"
+                className="inline-block bg-dark text-light px-6 py-3 text-xs tracking-widest hover:bg-mid transition"
+              >
+                Explore More
+              </Link>
+
+            </div>
+
+
+            {/* EXECUTIVECARE */}
+            <div className="group bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+              <p className="text-xs tracking-widest text-mid uppercase mb-4">
+                Presentation Tier
+              </p>
+
+              <h3 className="text-2xl tracking-wide text-dark mb-8">
+                ExecutiveCare
+              </h3>
+
+              <Link
+                href="/pages/service-programs#executivecare"
+                className="inline-block bg-dark text-white px-6 py-3 text-xs tracking-widest hover:bg-mid transition"
+              >
+                Explore More
+              </Link>
+
+            </div>
+
+
+            {/* COMPLIANCECARE */}
+            <div className="group bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+              <p className="text-xs tracking-widest text-mid uppercase mb-4">
+                Compliance Tier
+              </p>
+
+              <h3 className="text-2xl tracking-wide text-dark mb-8">
+                ComplianceCare
+              </h3>
+
+              <Link
+                href="/pages/service-programs#compliancecare"
+                className="inline-block bg-dark text-light px-6 py-3 text-xs tracking-widest hover:bg-mid transition"
+              >
+                Explore More
+              </Link>
+
+            </div>
+
+          </div>
+
         </div>
       </section>
 

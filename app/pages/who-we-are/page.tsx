@@ -38,22 +38,19 @@ export default function WhoWeAre() {
             </h2>
 
             <p className="text-gray-700 mb-6">
-              Allureon Callista is a compliance-driven commercial cleaning
-              partner serving organizations that demand consistency,
-              professionalism, and accountability.
+              Allureon Callista exists to make excellence
+              visible, verifiable, and sustainable in
+              professional environments where work and
+              purpose converge.
             </p>
 
             <p className="text-gray-700 mb-6">
-              We specialize in maintaining high-standard environments such as
-              corporate offices, financial institutions, retail spaces, and
-              luxury facilities where presentation and operational reliability
-              are essential.
+              We deliver consistency through documented
+              standards, routine verification, and measurable
+              performance, so outcomes hold across zones,
+              shifts, and changing conditions.
             </p>
-
-            <p className="text-gray-700">
-              Our work is built on documented standards, disciplined processes,
-              and teams trained to deliver the same level of quality every day.
-            </p>
+            
           </div>
 
           <div className="bg-dark text-light p-10">
@@ -90,24 +87,21 @@ export default function WhoWeAre() {
             OUR PHILOSOPHY
           </h2>
 
-          <p className="text-lg opacity-90 mb-10">
-            Exceptional environments are not created by chance. They are the
-            result of disciplined systems, trained professionals, and clear
-            standards that remove variability from daily operations.
+          <p className="text-lg opacity-90 mb-12 font-semibold">
+            We believe environments influence behavior,
+            culture, and performance.
           </p>
 
           <p className="opacity-80 mb-10">
-            At Allureon Callista, cleaning is treated as an operational
-            responsibility rather than a commodity service. Every facility we
-            maintain is supported by documented procedures, quality
-            verification, and a structured service program that ensures
-            consistent results.
+            When standards are clear and consistently upheld,
+            trust strengthens and risk declines
           </p>
 
           <p className="opacity-80">
-            Our goal is simple: to create environments where organizations can
-            operate with confidence, knowing their spaces are consistently
-            maintained to executive-ready standards.
+            Our work is guided by disciplined execution and
+            thoughtful design - because spaces that function with
+            clarity allow people and organizations to perform at
+            their highest level.
           </p>
 
         </div>
