@@ -175,7 +175,7 @@ export default function ContactForm() {
               className="w-full px-4 py-3 border border-gray-400 focus:border-dark focus:outline-none resize-none"
             ></textarea>
 
-            <p className="italic text-dark/70">Expect a respond within 24 hours*</p>
+            <p className="italic text-dark/70">Expect a response within 24 hours*</p>
           </div>
 
           <div className="text-center">

@@ -2,7 +2,9 @@ import TopNavBar from "./components/topNavBar";
 import ContactForm from "./components/contactusform";
 import InfoCard from "./components/infoCard";
 import Image from "next/image";
-import IndustriesCarousel from "./components/IndustriesCarousel";
+import EmblaCarousel from "./components/carousel/EmblaCarousel";
+
+import { EmblaOptionsType } from "embla-carousel"
 import {
   ShieldCheck,
   Gem,
@@ -15,16 +17,76 @@ import {
   Building,
   Mail,
   Linkedin,
-  Clock,
-  CheckCircle2,
-  PhoneCall,
-  Quote,
   ArrowRight,
   Star,
   Phone,
   Facebook
 } from "lucide-react";
 import Link from "next/link";
+
+const OPTIONS: EmblaOptionsType = { loop: true }
+const SLIDES = [
+  {
+    content: (
+      <div className="p-14 bg-dark border border-light/20 text-center">
+        <div className="mb-6 flex justify-center">
+          <Building2 className="w-14 h-14 text-light" />
+        </div>
+        <p className="font-medium tracking-wide text-light">
+          Corporate Offices
+        </p>
+      </div>
+    )
+  },
+  {
+    content: (
+      <div className="p-14 bg-dark border border-light/20 text-center">
+        <div className="mb-6 flex justify-center">
+          <Store className="w-14 h-14 text-light" />
+        </div>
+        <p className="font-medium tracking-wide text-light">
+          Retail Spaces
+        </p>
+      </div>
+    )
+  },
+  {
+    content: (
+      <div className="p-14 bg-dark border border-light/20 text-center">
+        <div className="mb-6 flex justify-center">
+          <Landmark className="w-14 h-14 text-light" />
+        </div>
+        <p className="font-medium tracking-wide text-light">
+          Banks & Institutions
+        </p>
+      </div>
+    )
+  },
+  {
+    content: (
+      <div className="p-14 bg-dark border border-light/20 text-center">
+        <div className="mb-6 flex justify-center">
+          <Factory className="w-14 h-14 text-light" />
+        </div>
+        <p className="font-medium tracking-wide text-light">
+          Manufacturing Facilities
+        </p>
+      </div>
+    )
+  },
+  {
+    content: (
+      <div className="p-14 bg-dark border border-light/20 text-center">
+        <div className="mb-6 flex justify-center">
+          <Building className="w-14 h-14 text-light" />
+        </div>
+        <p className="font-medium tracking-wide text-light">
+          Luxury Buildings
+        </p>
+      </div>
+    )
+  }
+]
 
 export default function Home() {
 
@@ -284,8 +346,9 @@ export default function Home() {
       {/* INDUSTRIES WE SERVE */}
       <section
         className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen"
-        id="services"
+        id="industries"
       >
+
         <div className="max-w-6xl mx-auto px-6">
 
           <h2 className="text-4xl tracking-widest text-light mb-10">
@@ -296,13 +359,12 @@ export default function Home() {
             Tailored solutions for distinguished commercial environments
           </p>
 
-          <IndustriesCarousel />
-
+          <EmblaCarousel slides={SLIDES} options={{ loop: true }} />
         </div>
       </section>
 
       {/* OUR SIGNATURE PROCESS */}
-      <section className="flex flex-col pt-24 bg-light items-center justify-center scroll-mt-32 min-h-screen" id="process">
+      <section className="flex flex-col pt-24 bg-light items-center justify-center scroll-mt-32 min-h-screen" id="services">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl tracking-widest text-primary mb-10">
@@ -605,7 +667,7 @@ export default function Home() {
                   href="#about"
                   className="text-light hover:text-white transition"
                 >
-                  About Us
+                  Why Us
                 </a>
               </li>
               <li>

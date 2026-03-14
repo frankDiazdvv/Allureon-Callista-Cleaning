@@ -1,0 +1,60 @@
+.embla {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .embla__slide {
+    flex: 0 0 33%;
+  }
+}
+
+
+.embla__slide__content {
+  transition: transform 0s ease;
+}
+
+/* arrows */
+.embla__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 9999px;
+}
+
+.embla__button--prev {
+  left: -40px;
+}
+
+.embla__button--next {
+  right: -40px;
+}
+
+.embla__button__svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}

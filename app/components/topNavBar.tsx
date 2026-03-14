@@ -36,7 +36,7 @@ export default function TopNavBar() {
             : "py-4 bg-linear-to-b from-black/70 to-transparent"}
         `}
       >
-        <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+        <button onClick={() => window.location.href = "/"}>
           <Image
             src={navLogo}
             alt="Allureon Callista Logo"
@@ -50,6 +50,7 @@ export default function TopNavBar() {
         <div className="hidden lg:flex gap-8 text-lg text-light">
           <a href="/pages/who-we-are">Who We Are</a>
           <a href="/#about">Why Us</a>
+          <a href="/#industries">Industries</a>
           <a href="/#services">Services</a>
           {/* <a href="#team">Meet the Team</a> */}
           <a href="/#testimonials">Testimonials</a>

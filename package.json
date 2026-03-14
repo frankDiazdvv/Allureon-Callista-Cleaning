@@ -12,6 +12,8 @@
     "@neondatabase/serverless": "^1.0.2",
     "@react-email/components": "^1.0.7",
     "@react-email/render": "^2.0.4",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.555.0",
     "next": "^16.0.7",
     "react": "^19.2.1",
