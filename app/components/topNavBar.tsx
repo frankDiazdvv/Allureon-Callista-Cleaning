@@ -50,10 +50,11 @@ export default function TopNavBar() {
         <div className="hidden lg:flex gap-8 text-lg text-light">
           <a href="/pages/who-we-are">Who We Are</a>
           <a href="/#about">Why Us</a>
+          <a href="/#compliance">Compliance & Standards</a>
           <a href="/#industries">Industries</a>
           <a href="/#services">Services</a>
           {/* <a href="#team">Meet the Team</a> */}
-          <a href="/#testimonials">Testimonials</a>
+          {/* <a href="/#testimonials">Testimonials</a> */}
           <a href="/#contact">Contact Us</a>
         </div>
 

@@ -45,6 +45,11 @@
   border-radius: 9999px;
 }
 
+.embla__button:hover {
+  background: rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
 .embla__button--prev {
   left: -40px;
 }

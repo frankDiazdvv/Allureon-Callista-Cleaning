@@ -42,10 +42,11 @@ export default function MobileMenu({ open, onClose }: Props) {
           { label: "Home", href: "/#" },
           { label: "Who We Are", href: "/pages/who-we-are" },
           { label: "Why Us", href: "/#about" },
+          { label: "Compliance & Standards", href: "/#compliance" },
           { label: "Industries", href: "/#industries" },
           { label: "Services", href: "/#services" },
           // { label: "Meet the Team", href: "#team" },
-          { label: "Testimonials", href: "/#testimonials" },
+          // { label: "Testimonials", href: "/#testimonials" },
           { label: "Contact Us", href: "/#contact" },
         ].map((item) => (
           <li key={item.href}>

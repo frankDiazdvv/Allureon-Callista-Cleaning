@@ -28,61 +28,96 @@ const OPTIONS: EmblaOptionsType = { loop: true }
 const SLIDES = [
   {
     content: (
-      <div className="p-14 bg-dark border border-light/20 text-center">
-        <div className="mb-6 flex justify-center">
-          <Building2 className="w-14 h-14 text-light" />
+      <div
+        className="relative p-14 border border-dark text-center flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('./corporate_offices.jpeg')",
+          minHeight: "400px",
+          minWidth: "400px"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40 rounded" />
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+          <p className="font-semibold tracking-wide text-light text-2xl">
+            Corporate Offices
+          </p>
         </div>
-        <p className="font-medium tracking-wide text-light">
-          Corporate Offices
-        </p>
+      </div>
+      )
+      },
+      {
+        content: (
+      <div
+        className="relative p-14 border border-dark text-center flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('./exec_environment.jpeg')",
+          minHeight: "400px",
+          minWidth: "400px"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40 rounded" />
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+          <p className="font-semibold tracking-wide text-light text-2xl">
+            Executive Environments
+          </p>
+        </div>
       </div>
     )
   },
   {
     content: (
-      <div className="p-14 bg-dark border border-light/20 text-center">
-        <div className="mb-6 flex justify-center">
-          <Store className="w-14 h-14 text-light" />
+      <div
+        className="relative p-14 border border-dark text-center flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('./bank_institution.jpeg')",
+          minHeight: "400px",
+          minWidth: "400px"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40 rounded" />
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+          <p className="font-semibold tracking-wide text-light text-2xl">
+            Bank & Government Facilities
+          </p>
         </div>
-        <p className="font-medium tracking-wide text-light">
-          Retail Spaces
-        </p>
       </div>
     )
   },
   {
     content: (
-      <div className="p-14 bg-dark border border-light/20 text-center">
-        <div className="mb-6 flex justify-center">
-          <Landmark className="w-14 h-14 text-light" />
+      <div
+        className="relative p-14 border border-dark text-center flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('./manufacturing.jpeg')",
+          minHeight: "400px",
+          minWidth: "400px"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40 rounded" />
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+          <p className="font-semibold tracking-wide text-light text-2xl">
+            Manufacturing Facilities
+          </p>
         </div>
-        <p className="font-medium tracking-wide text-light">
-          Banks & Institutions
-        </p>
       </div>
     )
   },
   {
     content: (
-      <div className="p-14 bg-dark border border-light/20 text-center">
-        <div className="mb-6 flex justify-center">
-          <Factory className="w-14 h-14 text-light" />
+      <div
+        className="relative p-14 border border-dark text-center flex items-center justify-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('./medical.jpeg')",
+          minHeight: "400px",
+          minWidth: "400px"
+        }}
+      >
+        <div className="absolute inset-0 bg-black/40 rounded" />
+        <div className="relative z-10 flex flex-col items-center justify-center w-full h-full">
+          <p className="font-semibold tracking-wide text-light text-2xl">
+            Medical Offices
+          </p>
         </div>
-        <p className="font-medium tracking-wide text-light">
-          Manufacturing Facilities
-        </p>
-      </div>
-    )
-  },
-  {
-    content: (
-      <div className="p-14 bg-dark border border-light/20 text-center">
-        <div className="mb-6 flex justify-center">
-          <Building className="w-14 h-14 text-light" />
-        </div>
-        <p className="font-medium tracking-wide text-light">
-          Luxury Buildings
-        </p>
       </div>
     )
   }
@@ -137,7 +172,7 @@ export default function Home() {
     },
   ];
 
-  const cardBackgroundColor = "bg-dark";
+  const cardBackgroundColor = "bg-light/20";
 
   
   return (
@@ -188,7 +223,7 @@ export default function Home() {
 
       </section>
 
-      {/* WHY CHOOSE US */}
+      {/* THE DIFFERENCE | WHY US */}
       <section className="flex flex-col py-24 bg-dark text-center justify-center scroll-mt-32 min-h-screen" id="about">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-4xl tracking-widest text-light mb-10">
@@ -286,26 +321,27 @@ export default function Home() {
         </div>
       </section>
 
-     {/* Security & Access Protocol */}
+     {/* Compliance & Standards */}
       <section className="flex flex-col py-24 bg-light items-center justify-center scroll-mt-32 min-h-screen"
-        id="security"
+        id="compliance"
       >
         <div className="max-w-6xl mx-auto px-6 text-center w-full">
           <h2 className="text-4xl tracking-widest text-dark mb-10">
-            SECURITY & ACCESS PROTOCOL
+            COMPLIANCE & STANDARDS
           </h2>
 
           <p className="text-dark text-lg max-w-2xl mx-auto mb-16">
-            Clear procedures for keys, alarms, and after-hours access, so your facility stays protected.
+            Compliance is not an add-on to our operations; it is embedded in how we work. Our standards are designed for highly controlled environments, 
+            where documentation, consistency and accountability are required.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-left">
             {/* Column 1 */}
             <ul className="space-y-4">
               {[
-                "Key / badge handling and return protocol",
-                "Alarm arm/disarm procedures aligned to your schedule",
-                "After-hours access rules and entry points",
+                "SDS backed chemical controls and approved product use",
+                "PPE & safety protocol reinforced through oversight",
+                "Restricted-area access rules aligned to site security requirements",
               ].map((item) => (
                 <li
                   key={item}
@@ -321,8 +357,9 @@ export default function Home() {
             {/* Column 2 */}
             <ul className="space-y-4">
               {[
-                "Restricted-area guidelines & escalation",
-                "Supervisor contact & rapid response",
+                "Infection prevention methodology by area type (routine + targeted)",
+                "Incident & exception documentation to maintain audit readiness",
+                "Verification records that support defensible, consistent execution",
               ].map((item) => (
                 <li
                   key={item}
@@ -336,9 +373,9 @@ export default function Home() {
             </ul>
           </div>
 
-          <p className="italic opacity-80 text-dark mt-12 text-center">
+          {/* <p className="italic opacity-80 text-dark mt-12 text-center">
             Background-checked team members available upon request.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -349,7 +386,7 @@ export default function Home() {
         id="industries"
       >
 
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-full mx-auto md:px-24 p-12 text-center w-full">
 
           <h2 className="text-4xl tracking-widest text-light mb-10">
             INDUSTRIES WE SERVE
@@ -443,7 +480,7 @@ export default function Home() {
             <div className="group bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
               <p className="text-xs tracking-widest text-mid uppercase mb-4">
-                Foundation Tier
+                Essential and reliable
               </p>
 
               <h3 className="text-2xl tracking-wide text-dark mb-8">
@@ -464,7 +501,7 @@ export default function Home() {
             <div className="group bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
               <p className="text-xs tracking-widest text-mid uppercase mb-4">
-                Presentation Tier
+                Elevated Presentation
               </p>
 
               <h3 className="text-2xl tracking-wide text-dark mb-8">
@@ -485,7 +522,7 @@ export default function Home() {
             <div className="group bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
 
               <p className="text-xs tracking-widest text-mid uppercase mb-4">
-                Compliance Tier
+                Controlled Environment
               </p>
 
               <h3 className="text-2xl tracking-wide text-dark mb-8">
@@ -576,7 +613,7 @@ export default function Home() {
 
 
       {/* TESTIMONIALS */}
-      <section className="py-24 bg-dark scroll-mt-32" id="testimonials">
+      {/* <section className="py-24 bg-dark scroll-mt-32" id="testimonials">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl tracking-widest text-light mb-10">
@@ -635,7 +672,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CONTACT FORM */}
       <ContactForm/>
