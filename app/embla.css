@@ -37,7 +37,7 @@
 /* arrows */
 .embla__button {
   position: absolute;
-  top: 50%;
+  top: 47%;
   transform: translateY(-50%);
   z-index: 10;
   background: rgba(255,255,255,0.1);

@@ -2,6 +2,7 @@ import TopNavBar from "../../components/topNavBar";
 import ContactForm from "../../components/contactusform";
 import { ArrowRight, ShieldCheck, Gem, Users } from "lucide-react";
 import Link from "next/link";
+import Footer from "@/app/components/footer";
 
 export default function WhoWeAre() {
   return (
@@ -130,8 +131,10 @@ export default function WhoWeAre() {
 
         </div>
       </section>
-
       <ContactForm />
+
+      {/* FOOTER */}
+      <Footer/>
     </>
   );
 }

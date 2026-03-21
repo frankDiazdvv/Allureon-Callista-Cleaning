@@ -1,3 +1,4 @@
+import Footer from "@/app/components/footer";
 import TopNavBar from "@/app/components/topNavBar";
 
 export default function ServicePrograms() {
@@ -63,7 +64,7 @@ export default function ServicePrograms() {
 
             <div className="bg-dark text-light p-12">
                 <h3 className="tracking-widest text-sm mb-6 opacity-80">
-                FOUNDATION TIER
+                ESSENTIAL AND RELIABLE
                 </h3>
 
                 <p className="text-lg leading-relaxed">
@@ -86,7 +87,7 @@ export default function ServicePrograms() {
 
             <div className="bg-mid text-white p-12 order-2 md:order-1">
                 <h3 className="tracking-widest text-sm mb-6 opacity-90">
-                PRESENTATION TIER
+                ELEVATED PRESENTATION
                 </h3>
 
                 <p className="text-lg leading-relaxed">
@@ -176,7 +177,7 @@ export default function ServicePrograms() {
 
             <div className="bg-dark text-light p-12">
                 <h3 className="tracking-widest text-sm mb-6 opacity-80">
-                COMPLIANCE TIER
+                CONTROLLED ENVIRONMENT
                 </h3>
 
                 <p className="text-lg leading-relaxed">
@@ -190,6 +191,7 @@ export default function ServicePrograms() {
         </section>
 
         </main>
+        <Footer/>
     </>
     
   );
