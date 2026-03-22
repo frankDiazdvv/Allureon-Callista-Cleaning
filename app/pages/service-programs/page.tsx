@@ -110,6 +110,7 @@ export default function ServicePrograms() {
                 </p>
 
                 <ul className="space-y-3 text-sm mb-10">
+                <li>• CoreCare services</li>
                 <li>• Monthly scheduled detail refresh</li>
                 <li>• Prevents operational “drift”</li>
                 <li>• Presentation-zone focus</li>
@@ -154,7 +155,7 @@ export default function ServicePrograms() {
                 </p>
 
                 <ul className="space-y-3 text-sm mb-10">
-                <li>• CoreCare + ExecutiveCare services</li>
+                <li>• ExecutiveCare services</li>
                 <li>• Monthly detail refresh included</li>
                 <li>• Cadence increases based on risk level</li>
                 <li>• Compliance documentation</li>

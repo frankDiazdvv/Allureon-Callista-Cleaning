@@ -199,7 +199,7 @@ export default function Home() {
 
           {/* Tagline */}
           <p className="text-sm md:text-base text-light tracking-widest uppercase opacity-80 mb-4">
-            The Art of Refined Transformation
+            Built for Consistency. Designed for Trust.
           </p>
 
           {/* H1 */}
@@ -461,7 +461,7 @@ export default function Home() {
       </section>
 
       {/* SERVICE PROGRAMS */}
-      <section className="bg-light pb-42">
+      <section className="bg-light pb-42 pt-24 md:pt-8 ">
         <div className="max-w-6xl mx-auto px-6">
 
           <div className="text-center mb-20">
