@@ -185,7 +185,7 @@ export default function Home() {
         {/* Video + Shadow */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/AllCal_hero_vid.mp4"
+          src="https://res.cloudinary.com/dgp60twfo/video/upload/v1774227437/AllCal_hero_vid_vbwclh.mp4"
           autoPlay
           loop
           muted

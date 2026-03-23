@@ -62,17 +62,17 @@ export default function WhoWeAre() {
             <ul className="space-y-4 text-sm">
               <li className="flex gap-3">
                 <ShieldCheck className="w-5 h-5 mt-0.5" />
-                Fully licensed, insured, and compliance-oriented
+                Execution aligned with OSHA, EPA, and industry compliance frameworks
               </li>
 
               <li className="flex gap-3">
                 <Gem className="w-5 h-5 mt-0.5" />
-                White-glove standards designed for executive environments
+                Structured SOP systems with routine QA verification and audit traceability
               </li>
 
               <li className="flex gap-3">
                 <Users className="w-5 h-5 mt-0.5" />
-                Professionally trained teams with verified QA oversight
+                Precision-driven service delivery tailored for executive and clinical environments
               </li>
             </ul>
           </div>
