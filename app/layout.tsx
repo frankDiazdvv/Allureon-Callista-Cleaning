@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://allureoncallista.com"),
 
   title: {
-    default: "Allureon Callista | The Art of Refined Transformation",
+    default: "Allureon Callista | Built for Consistency. Designed for Trust",
     template: "%s | Allureon Callista",
   },
 
   description: 
-    "The Art of Refined Transformation. Compliance-driven janitorial services for corporate offices, banks, retail spaces, and luxury buildings. Documented standards. Verified QA. Central Florida.",
+    "Built for Consistency. Designed for Trust. Compliance-driven janitorial services for corporate offices, banks, retail spaces, and luxury buildings. Documented standards. Verified QA. Central Florida.",
 
   keywords: [
     "commercial cleaning Orlando",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "luxury building cleaning",
   ],
   openGraph: {
-    title: "Allureon Callista | The Art of Refined Transformation",
+    title: "Allureon Callista | Built for Consistency. Designed for Trust",
     description:
       "Executive-ready cleaning with documented standards and verified QA.",
     url: "https://allureoncallista.com",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Allureon Callista | The Art of Refined Transformation",
+    title: "Allureon Callista | Built for Consistency. Designed for Trust",
     description:
       "Compliance-driven janitorial partner for premium commercial spaces.",
     images: ["/og-image.png"],

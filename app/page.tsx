@@ -185,7 +185,7 @@ export default function Home() {
         {/* Video + Shadow */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="https://res.cloudinary.com/dgp60twfo/video/upload/v1774227437/AllCal_hero_vid_vbwclh.mp4"
+          src="https://res.cloudinary.com/dgp60twfo/video/upload/v1774796599/AC_video_no_music_nx6y3a.mp4"
           autoPlay
           loop
           muted
@@ -470,12 +470,12 @@ export default function Home() {
             </h2>
 
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Three structured service tiers designed to match the operational
+              Three structured service care programs designed to match the operational
               needs of modern organizations.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-10">
+          <div className="grid lg:grid-cols-3 gap-10">
 
             {/* CORECARE */}
             <div className="group bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
@@ -538,6 +538,29 @@ export default function Home() {
               </Link>
 
             </div>
+
+            <div className="lg:row-start-2 lg:col-span-3 w-full h-px bg-dark/40"></div>
+            
+            {/* ADD-ON SERVICES */}
+            <div className="group lg:row-start-3 lg:col-start-2 bg-white border border-gray-200 p-10 text-center hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+              <p className="text-xs tracking-widest text-mid uppercase mb-4">
+                Service Extensions
+              </p>
+
+              <h3 className="text-2xl tracking-wide text-dark mb-8">
+                Add-On Services
+              </h3>
+
+              <Link
+                href="/pages/add-ons"
+                className="inline-block bg-mid text-light px-6 py-3 text-xs tracking-widest hover:bg-light hover:text-mid transition"
+              >
+                Explore More
+              </Link>
+
+            </div>
+            
 
           </div>
 

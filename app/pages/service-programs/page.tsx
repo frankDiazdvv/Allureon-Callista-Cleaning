@@ -17,7 +17,7 @@ export default function ServicePrograms() {
             </h1>
 
             <p className="text-gray-700 leading-relaxed">
-                Three structured service tiers designed to match the operational,
+                Three structured service care programs designed to match the operational,
                 presentation, and compliance requirements of modern facilities.
             </p>
 
@@ -149,7 +149,7 @@ export default function ServicePrograms() {
                 </h2>
 
                 <p className="text-gray-700 mb-8 leading-relaxed">
-                A comprehensive service tier designed for regulated
+                A comprehensive service care program designed for regulated
                 environments where documentation, traceability,
                 and audit readiness are essential.
                 </p>
